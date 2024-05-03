@@ -18,16 +18,6 @@ def hande_message(data):
 def send_message(msg): 
     socketio.emit('test', 'Welcome')
 
-# def run_server():
-#     socketio.run(app, host='localhost', port=4000, debug=True)
-
 if __name__ == '__main__':
-    # server_thread = Thread(target=run_server)
-    # server_thread.start()
 
-    # send_thread=Thread(target=send_message)
-    # send_thread.start()
-
-    # server_thread.join()
-    # send_thread.join()
-    socketio.run(app, host='localhost', port=4000, debug=True)
+    socketio.run(app, host='10.138.0.2', port=3000, debug=True)
